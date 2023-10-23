@@ -91,7 +91,7 @@ def prepare_input_test_2(frame):
 
 
 def knn_model(train_set,test_set,test_target):
-    model = KNN(n_neighbors=2)
+    model = KNN()
     model.fit(train_set)
     pred_list = model.predict(test_set)
     matrix = confusion_matrix(test_target, pred_list, labels=[1, 0])
@@ -116,7 +116,7 @@ def knn_model(train_set,test_set,test_target):
     return pred_list,metrics_dict
 
 def knn_model_2(train_set,test_set):
-    model = KNN(n_neighbors=2)
+    model = KNN()
     model.fit(train_set)
     pred_list = model.predict(test_set)
     return pred_list
