@@ -26,8 +26,8 @@ def bootstrap(data, b, c, func):
     k_1 = int(b * a / 2)
     k_2 = int(b * (1 - a / 2))
     AUC_sample_arr_sorted = sorted(sample_result_arr)
-    lower = auc_sample_arr_sorted[k_1]
-    higher = auc_sample_arr_sorted[k_2]
+    lower = AUC_sample_arr_sorted[k_1]
+    higher = AUC_sample_arr_sorted[k_2]
 
     return lower, higher
 
